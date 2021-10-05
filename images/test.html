@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    * {
+  box-sizing: border-box;  
+}
+
+#parent {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.child {
+  height: 50px;
+  background: #09f;
+  flex: 1 0 100%;
+  border: 5px solid white;
+}
+
+@media (min-width: 600px) {
+  .child {
+    flex-basis: 50%;
+  }
+}
+
+@media (min-width: 900px) {
+  .child {
+    flex-basis: 25%;
+  }
+}
+
+</style>
+<body>
+
+<div id="parent">
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+  <div class="child"></div>
+</div>
+
+
+</body>
+</html>
