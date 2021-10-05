@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;900&display=swap');
 * {
   box-sizing: border-box;
 }
@@ -12,6 +12,9 @@ body {
 }
 section {
   padding: 2rem 0;
+}
+.bold-text{
+  font-weight: 900;
 }
 .container {
   padding-right: 15px;
@@ -141,20 +144,18 @@ a {
   top: -2px;
 }
 .fa-shopping-cart {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 .head-sec {
   background-image: url("./images/header.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .header-sec {
   padding: 15rem 0;
 }
-/* section {
-  padding: 1.2rem 4.5rem;
-} */
 .header-sec {
   color: #fff;
 }
@@ -178,7 +179,12 @@ h1 {
   font-weight: 600;
   font-size: 16px;
 }
-
+.shop-btn:hover{
+  color: #3ab54a;
+  /* transition: 0.5s;  */
+  border: 1px solid #3ab54a;
+  background-color: #fff;
+}
 .navigate-sec button {
   background: #fff;
   border: 0;
@@ -194,7 +200,7 @@ h1 {
   cursor: pointer;
 }
 .navigate-sec {
-  position: absolute;
+  position: fixed;
   z-index: 3;
   top: 30%;
 }
@@ -330,11 +336,20 @@ p {
   margin-bottom: -20px;
   text-align: left;
 }
-
+.badge {
+  position: relative;
+  top: -14px;
+  left: -5px;
+  font-size: 10px;
+  background: #ed1b24;
+  padding: 1px 5px 2px 5px;
+  border-radius: 70%;
+}
 #email {
   border-radius: 30px;
   width: 60%;
   height: 48px;
+  font-family: inherit;
   filter: drop-shadow(0 0 12.5px #e0e0e0);
   border: 0;
   padding: 0 20px;
@@ -346,7 +361,7 @@ p {
   align-items: center;
   flex: 3;
 }
-.news-form .cmn-btn{
+.news-form .cmn-btn {
   padding-top: 6px;
 }
 .fa-telegram-plane {
@@ -376,7 +391,7 @@ p {
 }
 .footer-sec {
   background-color: #ebe8e1;
-  padding: 5px 4.5rem;
+  padding: 5px 0;
 }
 .footer-menu li {
   display: inline-block;
@@ -400,10 +415,11 @@ p {
   margin-top: -10px;
 }
 .navg-block {
-  position: absolute;
+  position: fixed;
   top: 40%;
   display: none;
   background: #fff;
+  box-shadow: 0.14px 1.995px 9px rgba(144, 144, 144, 0.4);
   padding: 15px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -460,7 +476,7 @@ p {
   .header li a {
     padding: 20px 10px;
     font-size: 13px;
-}
+  }
 }
 @media screen and (max-width: 767px) {
   .news-cont .sec-head,
@@ -472,7 +488,7 @@ p {
   .header li a {
     padding: 20px 15px;
     font-size: 14px;
-}
+  }
   .points-sec {
     flex-direction: column;
   }
@@ -503,6 +519,9 @@ p {
   .header li a {
     color: #3ab54a;
     text-align: center;
+  } 
+  .badge{
+    color: #fff;
   }
   #email {
     margin-bottom: 20px;
