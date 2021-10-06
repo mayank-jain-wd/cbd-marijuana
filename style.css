@@ -17,8 +17,6 @@
     font-weight: 900;
   }
   .container {
-    padding-right: 15px;
-    padding-left: 15px;
     position: relative;
     max-width: 100%;
     margin-left: auto;
@@ -217,6 +215,7 @@
   h2 {
     font-size: 2.4rem;
     margin-bottom: -3px;
+    line-height: 34px;
     font-weight: 400;
   }
   .sec-head h3 {
@@ -436,7 +435,7 @@
     padding-left: 0;
   }
   .footer-list li {
-    padding: 5px 0;
+    padding: 7px 0;
     text-transform: capitalize;
   }
   .footer-list li i {
@@ -491,6 +490,9 @@
     }
     .points-sec {
       flex-direction: column;
+    }
+    .container{
+      padding: 0 15px;
     }
     .fb,
     .sb,
