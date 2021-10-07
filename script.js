@@ -1,4 +1,4 @@
-var text = ["Wealthy", "Marijuana"];
+var text = ["Healthy", "CBD Oil"];
 var counter = 0;
 var elem = document.getElementById("changeText");
 var inst = setInterval(change, 2000);
